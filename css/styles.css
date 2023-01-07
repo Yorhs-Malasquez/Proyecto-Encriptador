@@ -206,15 +206,25 @@ textarea {
 }
 
 footer {
-    clear: both;
+    /*clear: both;*/
     padding: 2%;
     margin: 1% 0;
     background-color: #0a3871;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;
-    text-align: center;
-    color: white;
+    font-size: 1.5rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+
+}
+
+footer a {
+    color: #ffffff;
+    /* background-color: black; */
 }
 
 @media screen and (max-width: 480px) {
