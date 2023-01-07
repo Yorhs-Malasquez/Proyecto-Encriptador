@@ -89,19 +89,13 @@ textarea {
     gap: 2.5rem;
 }
 
-.buttons button {
+
+.btn-primary {
     width: 50%;
     height: 100%;
     border-radius: 24px;
     font-size: 1.5rem;
     cursor: pointer;
-    -webkit-border-radius: 24px;
-    -moz-border-radius: 24px;
-    -ms-border-radius: 24px;
-    -o-border-radius: 24px;
-}
-
-.btn-primary {
     background-color: #0A3871;
     transition: 300ms;
     box-sizing: border-box;
@@ -115,6 +109,11 @@ textarea {
 }
 
 .btn-secondary {
+    width: 50%;
+    height: 100%;
+    border-radius: 24px;
+    font-size: 1.5rem;
+    cursor: pointer;
     color: #0a3871;
     background-color: #D8DFE8;
     border: 1px solid #0a3871;
@@ -145,12 +144,19 @@ textarea {
     width: 90%;
 }
 
+.img-muñeco {
+
+
+    width: 100%;
+    height: 60%;
+}
+
 .resultado-info {
     text-align: center;
 }
 
 .resultado-info h3 {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     font-weight: bold;
     line-height: 120%;
     text-align: center;
@@ -159,7 +165,7 @@ textarea {
 }
 
 .resultado-info p {
-    font-size: 1.6rem;
+    font-size: 1rem;
     line-height: 150%;
 
 }
@@ -199,6 +205,18 @@ textarea {
     background-color: #f3f5fc;
 }
 
+footer {
+    clear: both;
+    padding: 2%;
+    margin: 1% 0;
+    background-color: #0a3871;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: white;
+}
+
 @media screen and (max-width: 480px) {
     .container {
         display: flex;
@@ -220,7 +238,7 @@ textarea {
 
     .d2 {
         width: auto;
-       
+
     }
 
     .buttons {
@@ -233,13 +251,13 @@ textarea {
 
     .d3 {
         width: 100%;
-        height:50rem;
+        height: 50rem;
         margin: 0;
 
     }
 
     .resultado-inicial img {
-        display: none;  
+        display: none;
     }
 
     .resultado-final {
@@ -263,7 +281,7 @@ textarea {
         width: auto;
         height: auto;
     }
-    
+
     .textarea {
         height: 78%;
     }
@@ -299,7 +317,7 @@ textarea {
     .resultado-final textarea {
         width: 100%;
         height: 85%;
-        
+
     }
 
 }
