@@ -1,0 +1,305 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.head {
+    height: 1rem;
+}
+
+body {
+    background-color: #f3f5fc;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+
+}
+
+textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+}
+
+.container {
+    background-color: #f3f5fc;
+    display: flex;
+}
+
+.d1 {
+    /*background-color: aquamarine;
+    width: 10%;*/
+    /*display: flex;*/
+    /*height: 40rem;*/
+    display: flex;
+
+
+}
+
+.d2 {
+    /*display: flex;*/
+    height: 40rem;
+    width: 60%;
+    background-color: #f3f5fc;
+    align-items: center;
+    justify-content: center;
+}
+
+.textarea {
+    width: 100%;
+    height: 91%;
+}
+
+#texto-inicial::placeholder {
+    color: #0A3871;
+}
+
+.textarea textarea {
+    width: 100%;
+    height: 75%;
+    font-size: 2rem;
+    font-weight: 400;
+    background-color: #f3f5fc;
+    color: #0A3871;
+    padding-top: 8rem;
+    line-height: 48px;
+
+}
+
+.msg-advertencia {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 150%;
+    opacity: .8;
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.buttons button {
+    width: 50%;
+    height: 100%;
+    border-radius: 24px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+
+.btn-primary {
+    background-color: #0A3871;
+    transition: 300ms;
+    box-sizing: border-box;
+    border: 1px solid #0A3871;
+    color: #ffffff;
+
+}
+
+.btn-primary:hover {
+    background-color: #072B61;
+}
+
+.btn-secondary {
+    color: #0a3871;
+    background-color: #D8DFE8;
+    border: 1px solid #0a3871;
+    transition: 300ms;
+}
+
+.btn-secondary:hover {
+    background-color: #AAB2D5;
+}
+
+.d3 {
+    width: 30%;
+    height: 44rem;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgb(0 0 0 / 8%);
+    margin-left: 10rem;
+    margin-right: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+
+}
+
+
+
+.resultado-inicial {
+    width: 90%;
+}
+
+.resultado-info {
+    text-align: center;
+}
+
+.resultado-info h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 120%;
+    text-align: center;
+    padding: 10px 1px;
+
+}
+
+.resultado-info p {
+    font-size: 1.6rem;
+    line-height: 150%;
+
+}
+
+.resultado-final {
+    width: 90%;
+    height: 95%;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.resultado-final textarea {
+    width: 100%;
+    height: 88.5%;
+    margin-bottom: 3.2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.4rem;
+    line-height: 36px;
+    color: #495057;
+}
+
+.btn-copy {
+    width: 100%;
+    height: 4rem;
+    background-color: #ffffff;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    transition: 300ms;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 24px;
+    font-size: 1.5rem;
+
+}
+
+.btn-copy:hover {
+    background-color: #f3f5fc;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .d1 {
+        width: auto;
+        height: auto;
+    }
+
+    .textarea {
+        height: 60%;
+    }
+
+    .textarea textarea {
+        height: 100%;
+    }
+
+    .d2 {
+        width: auto;
+       
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .d3 {
+        width: 100%;
+        height:50rem;
+        margin: 0;
+
+    }
+
+    .resultado-inicial img {
+        display: none;  
+    }
+
+    .resultado-final {
+        width: 90%;
+    }
+
+    .resultado-final textarea {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .d1 {
+        width: auto;
+        height: auto;
+    }
+    
+    .textarea {
+        height: 78%;
+    }
+
+    .textarea textarea {
+        height: 100%;
+    }
+
+    .d2 {
+        width: auto;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .d3 {
+        width: 100%;
+        height: 30rem;
+        margin: 0;
+        margin-bottom: 3rem;
+
+    }
+
+    .resultado-inicial img {
+        display: none;
+    }
+
+    .resultado-final {
+        width: 90%;
+    }
+
+    .resultado-final textarea {
+        width: 100%;
+        height: 85%;
+        
+    }
+
+}
